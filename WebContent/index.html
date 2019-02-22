@@ -1,0 +1,195 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+
+<head>
+	<title>上海发布-接口测试-Java</title>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+	<meta http-equiv="Access-Control-Allow-Origin" content="*">
+	<meta name="page-view-size" content="1280*720"/>
+	<meta name="author" content="scumyang@gmail.com"/>
+	<meta name="keywords" content=""/>
+	<meta name="description" content=""/>
+	<link rel="shortcut icon" href="favicon.ico">
+</head>
+
+<style type="text/css">
+body
+{
+overflow:auto;padding:0px;margin:0px;color:#ccc;font:normal 15px Tahoma;
+background:#000000;
+-background-image:-moz-linear-gradient(top, #57a740, #468733);
+-background-image:-webkit-gradient(linear, right top, left bottom, color-stop(0, #113366), color-stop(1, #000000));
+-background-image:linear-gradient(to bottom, #113366 0%,#000000 100%);
+}
+
+img,button			{border:0px}
+
+a,a:link,a:visited	{text-decoration:none;font:normal 15px Tahoma;color:#fff}
+a:hover				{text-decoration:underline;color:#ff0}
+
+#eSA				{position:absolute;height:648px;left:64px;top:36px}
+
+li
+{
+font:normal 15px Tahoma;
+padding-left:15px;
+margin-bottom:15px;
+}
+
+h2
+{
+color:#f80;
+}
+
+label
+{
+font:normal 15px tahoma;
+}
+
+input
+{
+width:190px;
+height:25px;
+font:bold 15px Tahoma;
+color:#6af;
+background:#333;
+border:1px solid #555;
+border-radius:8px;
+padding:5px;
+}
+
+.inp_s
+{
+width:200px;
+}
+
+</style>
+
+<script type="text/javascript" src=""></script>
+<script type="text/javascript">
+$G =
+{
+	onPageLoad: function()
+	{
+		try
+		{
+			window.$ ? 0 : window.$ = function $( E ){ return document.getElementById( E ); }
+
+			document.onkeydown = function( E )
+			{
+				var E = E || event, K = E.keyCode;
+				switch( K )
+				{
+					//case 48: location.reload(); break;
+				}
+			}
+		}
+		catch( E )
+		{
+			alert( '$G.onPageLoad(): ' + E.message );
+		}
+	}
+
+	,onPageUnload: function()
+	{
+	}
+}
+
+</script>
+
+<body onload="$G.onPageLoad()" onunload="$G.onPageUnload()">
+
+<!--安全区-->
+<div id="eSA">
+<ul>
+	<li><h2>上海发布 API Demo</h2></li>
+	<li><a href="javascript:open('/UDIS/SHLife/user/getData?IP='+ $('IP').value+'&MAC='+ $('MAC').value+'&CA='+ $('CA').value)" target="_blank">获取用户信息 user/getData</a>
+	&nbsp;<label for="tagId">IP：</label><input id="IP" value="192.168.0.51"/>
+	<label for="tagId">MAC：</label><input id="MAC" value="d3-32-ad-y6-2w-0a"/>
+	<label for="tagId">CA：</label><input id="CA" value="536559662341242"/>
+	
+	<li><a href="javascript:open('/UDIS/SHLife/user/getData?IP='+ $('uIP').value+'&MAC='+ $('uMAC').value+'&CA='+ $('uCA').value+'&type='+ $('type').value+'&data='+ $('uPara').value)" target="_blank">更新用户信息 user/getData</a>
+	&nbsp;<label for="tagId">IP：</label><input id="uIP" value="192.168.0.51"/>
+	<label for="tagId">MAC：</label><input id="uMAC" value="d3-32-ad-y6-2w-0a"/>
+	<label for="tagId">CA：</label><input id="uCA" value="536559662341242"/>
+	<label for="tagId">Type：</label><input id="type" value="1"/>
+	<label for="tagId">Info：</label><input id="uPara" value='{"id":"12343434","pw":"sasas121"}'/>
+	
+	<li><a href="javascript:open('/UDIS/SHLife/user/upUserInfo?IP='+ $('uIP').value+'&MAC='+ $('uMAC').value+'&CA='+ $('uCA').value+'&uname='+ $('uname').value+'&idcard='+ $('idcard').value+'&param='+ $('param').value)" target="_blank">更新All用户信息 user/upUserInfo</a>
+	&nbsp;<label for="tagId">IP：</label><input id="uIP" value="192.168.0.51"/>
+	<label for="tagId">MAC：</label><input id="uMAC" value="d3-32-ad-y6-2w-0a"/>
+	<label for="tagId">CA：</label><input id="uCA" value="536559662341242"/>
+	<label for="tagId">uname:</label><input id="uname" value="朱先生"/>
+	<label for="tagId">idcard：</label><input id="idcard" value="42112619*********4"/>
+	<label for="tagId">param：</label><input id="param" value='{"交通卡余额查询":{"id":"53655966234","pwd":""},"养老保险查询":{"id":"210624198503203213","pwd":"920808"},"医疗保险查询":{"id":"210624198503203213","pwd":"920808"}}'/>
+	
+	<li><a href="/UDIS/SHLife/weather/getData" target="_blank">上海天气 weather/getData</a>
+	
+	<li><a href="/UDIS/SHLife/aqi/getData" target="_blank">空气质量 aqi/getData</a>
+	
+	<li><a href="/UDIS/SHLife/scenicl/getData?pageIndex=1&pageNum=8" target="_blank">景区实时客流 scenicl/getData</a>
+	
+	<li><a href="/UDIS/SHLife/talk/getData?pageIndex=1&pageNum=8" target="_blank">英文解沪语 talk/getData</a>
+	
+	<li><a href="/UDIS/SHLife/buzz/getData?pageIndex=1&pageNum=8" target="_blank">英文翻热词 buzz/getData</a>
+	
+	<li><a href="/UDIS/SHLife/what/getData?pageIndex=1&pageNum=4" target="_blank">文艺早知道 what/getData</a>
+	
+	<li><a href="/UDIS/SHLife/road/getData" target="_blank">路况 road/getData</a>
+	
+	<li><a href="javascript:open('/UDIS/SHLife/traffic/JTKYE?id=' + $('jtk').value)" target="_blank">交通卡余额查询 traffic/JTKYE</a>
+	<label for="tagId">卡号：</label><input id="jtk" value="53655966234"/>
+	
+	<li><a href="javascript:open('/UDIS/SHLife/public/GJJ?username='+ $('username').value+'&pwd='+ $('pwd').value)" target="_blank">公积金查询 public/GJJ</a>
+	<label for="tagId">用户名：</label><input id="username" value="zhuyouqiang"/>
+	<label for="tagId">密码：</label><input id="pwd" value="zhu4121887"/>
+	
+	<li><a href="javascript:open('/UDIS/SHLife/social/getData?idnum='+ $('idnum').value+'&idpwd='+ $('idpwd').value)" target="_blank">养老保险查询 social/getData</a><!-- public/YLJ -->
+	<label for="tagId">用户名：</label><input id="idnum" value="210624198503203213"/>
+	<label for="tagId">密码：</label><input id="idpwd" value="920808"/>
+	
+	<li><a href="javascript:open('/UDIS/SHLife/public/YLJ?idnum='+ $('idnum1').value+'&idpwd='+ $('idpwd1').value)" target="_blank">养老保险查询 public/YLJ(老接口)</a><!-- public/YLJ -->
+	<label for="tagId">用户名：</label><input id="idnum1" value="210624198503203213"/>
+	<label for="tagId">密码：</label><input id="idpwd1" value="920808"/>
+	
+	<li><a href="javascript:open('/UDIS/SHLife/health/getData?idnum='+ $('ybidnum').value+'&idpwd='+ $('ybidpwd').value)" target="_blank">医疗保险查询 health/getData</a><!-- public/YB -->
+	<label for="tagId">用户名：</label><input id="ybidnum" value="6006586032"/>
+	<label for="tagId">密码：</label><input id="ybidpwd" value="111111"/>
+	
+	
+	<li><a href="javascript:open('/UDIS/SHLife/public/CRJYY?cknumber='+ $('cknumber1').value+'&ckzwxm='+ $('ckname').value)" target="_blank">出入境预约申请 public/CRJYY</a>
+	<label for="tagId">用户名：</label><input id="cknumber1" value="421126199001201154"/>
+	<label for="tagId">密码：</label><input id="ckname" value="朱佑强"/>
+	
+	<li><a href="javascript:open('/UDIS/SHLife/public/CRJJD?cknumber='+ $('cknumber').value+'&ckzwxm='+ $('ckzwxm').value)" target="_blank">出入境进度 public/CRJJD</a>
+	<label for="tagId">用户名：</label><input id="cknumber" value="421126199001201154"/>
+	<label for="tagId">密码：</label><input id="ckzwxm" value="朱佑强"/>
+	
+	<li><a href="javascript:open('/UDIS/SHLife/public/JHYY?bookid='+ $('bookid').value+'&cardid='+ $('cardid').value)" target="_blank">结婚登记预约 public/JHYY</a>
+	<label for="tagId">用户名：</label><input id="bookid" value="1111111111111"/>
+	<label for="tagId">密码：</label><input id="cardid" value="421126199001201154"/>
+	
+	
+	<li><a href="javascript:open('/UDIS/SHLife/public/JHYY?bookid='+ $('bookid').value+'&cardid='+ $('cardid').value)" target="_blank">结婚登记预约 public/JHYY</a>
+	<label for="tagId">用户名：</label><input id="bookid" value="1111111111111"/>
+	<label for="tagId">密码：</label><input id="cardid" value="421126199001201154"/>
+	
+	<li><a href="/UDIS/SHLife/tax/getData" target="_blank">个税查询 tax/getData</a>
+	
+	<li><a href="/UDIS/tv/run" target="_blank">节目单 tv/run</a>
+	
+	<li><a href="/UDIS/SHLife/grab/getData" target="_blank">抓取数据 grab/getData</a>
+	<li><a href="/UDIS/SHLife/grab/grabWeather" target="_blank">抓取天气、AQI、路况数据 grab/grabWeather</a>
+	
+	<li><a href="/UDIS/main/changeStauts?tag=1" target="_blank">本地抓取状态修改 main/changeStauts</a>
+	
+	
+	<li><a href="javascript:open('/UDIS/jiankai/check?ca='+ $('ca').value)" target="_blank">欠费查询 jiankai/check</a><!-- public/YLJ -->
+	<label for="tagId">CA卡号：</label><input id="ca" value="6006586032"/>
+	
+
+</ul>
+</div>
+
+</body>
+</html>

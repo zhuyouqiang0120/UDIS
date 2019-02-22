@@ -1,0 +1,39 @@
+{
+    "data": [
+        {
+            "channelno": "1",
+            "GUID": "dbbc624740cc475ab14a4424b9608eb8",
+            "freq": "724",
+            "pid": "101",
+            "bitrate": "5432",
+            "title": "CCTV-1综合",
+            "tsid": "1",
+            "sid": "2",
+            "vid": "102",
+            "encryption": null,
+            "definition": "HD",
+            "qam": "64QAM",
+            "aid": "101",
+            "sreate": "6875"
+        },
+        {
+            "channelno": "2",
+            "GUID": "c32c11e4165542e39931c34342a8efa4",
+            "freq": "523",
+            "pid": "101",
+            "bitrate": "5555",
+            "title": "东方卫视",
+            "tsid": "1",
+            "sid": "2",
+            "vid": "102",
+            "encryption": null,
+            "definition": "HD",
+            "qam": "64QAM",
+            "aid": "101",
+            "sreate": "8837"
+        }
+    ],
+    "ResponseTime": 3,
+    "version": "1.0",
+    "desc": "LEMON LiveChannel"
+}

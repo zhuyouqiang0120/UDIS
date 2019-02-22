@@ -1,0 +1,61 @@
+{
+    "bg": "yun",
+    "list": [
+        {
+            "datatime": "2016-03-31",
+            "direction": "偏东风",
+            "speed": "2-3级",
+            "tempe": "12~16℃",
+            "weather": "阴有小雨转阴到多云",
+            "weatherpic": "小雨转多云",
+            "pic": "http://182.254.141.172/static/images/weather_little_rain.png",
+            "dat": "03-31",
+            "week": "星期四"
+        },
+        {
+            "datatime": "2016-04-01",
+            "direction": "东南风",
+            "speed": "3-4级",
+            "tempe": "11~22℃",
+            "weather": "多云",
+            "weatherpic": "多云",
+            "pic": "http://182.254.141.172/static/images/weather_cloudy.png",
+            "dat": "04-01",
+            "week": "星期五"
+        },
+        {
+            "datatime": "2016-04-02",
+            "direction": "东南风",
+            "speed": "4-5级",
+            "tempe": "14~22℃",
+            "weather": "多云转阴有雷阵雨",
+            "weatherpic": "多云转雷阵雨",
+            "pic": "http://182.254.141.172/static/images/weather_thunder_rain.png",
+            "dat": "04-02",
+            "week": "星期六"
+        },
+        {
+            "datatime": "2016-04-03",
+            "direction": "偏北风",
+            "speed": "4-5级",
+            "tempe": "12~20℃",
+            "weather": "阴有雷阵雨转小雨",
+            "weatherpic": "雷阵雨转小雨",
+            "pic": "http://182.254.141.172/static/images/weather_thunder_rain.png",
+            "dat": "04-03",
+            "week": "星期日"
+        },
+        {
+            "datatime": "2016-04-04",
+            "direction": "偏北风",
+            "speed": "3-4级",
+            "tempe": "9~16℃",
+            "weather": "阴到多云",
+            "weatherpic": "阴到多云",
+            "pic": "http://182.254.141.172/static/images/weather_overcast.png",
+            "dat": "04-04",
+            "week": "星期一"
+        }
+    ],
+    "yj": []
+}
